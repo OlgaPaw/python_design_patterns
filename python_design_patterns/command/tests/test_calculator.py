@@ -7,8 +7,8 @@ from python_design_patterns.command.commands.exceptions import NoCommandToRevoke
 from python_design_patterns.command.commands.multiply import Multiply
 
 
-@pytest.fixture
-def calculator() -> Calculator:
+@pytest.fixture(name='calculator')
+def calc() -> Calculator:
     return Calculator()
 
 

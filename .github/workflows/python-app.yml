@@ -23,9 +23,12 @@ jobs:
         run: |
           pip install poetry
           poetry install
-      - name: Lint
+      - name: Mypy check
         run: |
           poetry run mypy .
+      - name: Pylint
+        run: |
+          poetry run pylint python_design_patterns
       - name: Test
         run: |
           poetry run pytest
