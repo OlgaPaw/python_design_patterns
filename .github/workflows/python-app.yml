@@ -31,4 +31,4 @@ jobs:
           poetry run pylint python_design_patterns
       - name: Test
         run: |
-          poetry run pytest
+          poetry run pytest --junitxml=junit/test-results.xml --cov=python_design_patterns --cov-report=term-missing --cov-report=xml --doctest-modules
