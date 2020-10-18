@@ -12,7 +12,4 @@ class IndexDisplay(DisplayStrategy):
 class FullNameDisplay(DisplayStrategy):
     @staticmethod
     def view(students: Iterable[Student]) -> Dict[str, int]:
-        return {
-            f'{student.surname} {student.name}': student.note
-            for student in students
-        }
+        return {f'{student.surname} {student.name}': student.note for student in students}
