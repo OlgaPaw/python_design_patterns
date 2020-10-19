@@ -29,6 +29,9 @@ jobs:
       - name: Pylint
         run: |
           poetry run pylint python_design_patterns
+      - name: Isort
+        run: |
+          poetry run isort python_design_patterns --recursive --check-only
       - name: Test
         run: |
           poetry run pytest --junitxml=junit/test-results.xml --cov=python_design_patterns --cov-report=term-missing --cov-report=xml --doctest-modules

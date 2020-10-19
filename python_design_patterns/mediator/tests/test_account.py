@@ -3,7 +3,7 @@ import logging
 import pytest
 
 from python_design_patterns.mediator.account import BankAccount, InsufficientBalance
-from python_design_patterns.mediator.account_interfaces import WebAccountInterface, ATMAccountInterface
+from python_design_patterns.mediator.account_interfaces import ATMAccountInterface, WebAccountInterface
 
 
 def test_mediator():
