@@ -29,18 +29,11 @@ class DisplayStrategy(metaclass=ABCMeta):
 
 
 class StudentsView:
-    def __init__(
-        self,
-        ordering_strategy: OrderingStrategy,
-        display_strategy: DisplayStrategy,
-    ) -> None:
+    def __init__(self, ordering_strategy: OrderingStrategy, display_strategy: DisplayStrategy) -> None:
         self.ordering_strategy = ordering_strategy
         self.display_strategy = display_strategy
 
-    def _get_sorted_items(
-        self,
-        students: Iterable[Student],
-    ) -> Iterable[Student]:
+    def _get_sorted_items(self, students: Iterable[Student]) -> Iterable[Student]:
         return self.ordering_strategy.sort(students)
 
     def _get_display(self, students: Iterable[Student]) -> Dict[str, int]:
