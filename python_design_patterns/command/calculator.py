@@ -16,6 +16,6 @@ class Calculator:
     def revoke(self) -> None:
         try:
             last_command = self.commands.pop()
-        except IndexError:
-            raise NoCommandToRevokeException()
+        except IndexError as err:
+            raise NoCommandToRevokeException() from err
         self.result = last_command.revoke(self.result)
