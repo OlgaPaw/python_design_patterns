@@ -10,6 +10,7 @@ Usage examples can be found in ``design_pattern/tests``.
 .. code-block:: python
 
    poetry install
+   pre-commit install
    pytest .
 
 

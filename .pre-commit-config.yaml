@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: "master"
+    hooks:
+      - id: isort
+        exclude: strategy_template
+  - repo: https://github.com/pre-commit/mirrors-yapf
+    rev: "master"
+    hooks:
+      - id: yapf
+  - repo: https://github.com/pre-commit/mirrors-pylint
+    rev: "master"
+    hooks:
+      - id: pylint
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "master"
+    hooks:
+      - id: mypy
