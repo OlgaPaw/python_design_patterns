@@ -34,13 +34,13 @@ A ``BankAccount`` performs as the ``Mediator`` and notifies ``mobile_interface``
 Any other ``AccountInterface`` can be added.
 
 
-Singleton
-#########
+Singleton / Monostate
+#####################
 
 Example problem:
 
 A Blog Post App with global font configuration.
-``Font`` settings (color and base size) acts like singleton, a single object shared between all  ``TextField`` objects.
+``Font`` settings (color and base size) acts like singleton/monostate, a single object shared between all  ``TextField`` objects.
 It can be accessed from any part of application (including tests).
 Any change made to Font module affects all other ``TextField`` objects.
 
