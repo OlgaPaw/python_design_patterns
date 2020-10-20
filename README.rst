@@ -17,7 +17,7 @@ Usage examples can be found in ``design_pattern/tests``.
 Command
 #######
 
-Example problem:
+**Example problem:**
 
 The calculator supporting undo/redo last command
 
@@ -25,7 +25,7 @@ The calculator supporting undo/redo last command
 Mediator
 ########
 
-Example problem:
+**Example problem:**
 
 Multiple interfaces (mobile, online, ATM) have access to bank account (mediator).
 When ay operation is perfomed through any interface, the mobile interface gets the notification.
@@ -34,10 +34,22 @@ A ``BankAccount`` performs as the ``Mediator`` and notifies ``mobile_interface``
 Any other ``AccountInterface`` can be added.
 
 
+Null Object
+###########
+
+**Example problem:**
+
+`User` object has optional 1 to 1 relation with `Address` (home). 
+
+If `User` has a home, we can send a crow to his home. If he hasn't a home, nothing happends.
+
+We should also be able to check if user has a home.
+
+
 Singleton / Monostate
 #####################
 
-Example problem:
+**Example problem:**
 
 A Blog Post App with global font configuration.
 ``Font`` settings (color and base size) acts like singleton/monostate, a single object shared between all  ``TextField`` objects.
@@ -48,7 +60,7 @@ Any change made to Font module affects all other ``TextField`` objects.
 Strategy
 ########
 
-Example problem:
+**Example problem:**
 
 - There is a list of students with their final exam notes. 
 - Examinator needs to present student's notes report with different formats:
